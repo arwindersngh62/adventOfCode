@@ -1,4 +1,6 @@
-file = open("input.txt", "r")
+from pathlib import Path
+
+file = open(Path(__file__).parent.absolute()/"input.txt", "r")
 
 def compareChrs(str1,str2):
     for i in str1:
